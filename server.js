@@ -14,6 +14,10 @@ app.get('/', (_req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Servidor rodando em http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
+  });
+}
+
+module.exports = app;
