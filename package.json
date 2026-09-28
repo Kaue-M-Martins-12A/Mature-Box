@@ -1,22 +1,30 @@
 {
   "name": "maturebox-site",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000M\u0000a\u0000t\u0000u\u0000r\u0000e\u0000B\u0000o\u0000x\u0000-\u0000S\u0000i\u0000t\u0000e\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "private": true,
+  "description": "MatureBox landing page e estrutura pronta para deploy em Vercel",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo \"Static site ready for Vercel\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Leciane-Silva12A/MatureBox-Site.git"
   },
-  "keywords": [],
+  "keywords": [
+    "maturebox",
+    "site",
+    "vercel",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-=======
   "type": "commonjs",
->>>>>>> 29c0d882789bb2d903a4a3417d1e14995da6cc0e
+  "engines": {
+    "node": ">=18"
+  },
   "bugs": {
     "url": "https://github.com/Leciane-Silva12A/MatureBox-Site/issues"
   },
